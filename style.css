@@ -304,19 +304,19 @@ a {
     width: 97px;
     height: 50px; }
   .page__header .header__burger {
-    background-image: url("/src/img/burger.svg"); }
+    background-image: url(./static/burger.svg); }
   .page__header .header__repair {
-    background-image: url("/src/img/repair.svg"); }
+    background-image: url(./static/repair.svg); }
   .page__header .header__call {
-    background-image: url("/src/img/call.svg"); }
+    background-image: url(./static/call.svg); }
   .page__header .header__chat {
-    background-image: url("/src/img/chat.svg"); }
+    background-image: url(./static/chat.svg); }
   .page__header .header__profile {
-    background-image: url("/src/img/profile.svg"); }
+    background-image: url(./static/profile.svg); }
   .page__header .header__checkstatus {
-    background-image: url("/src/img/checkstatus.svg"); }
+    background-image: url(./static/checkstatus.svg); }
   .page__header .header__divider {
-    background-image: url("/src/img/divider.svg");
+    background-image: url(./static/divider.svg);
     width: 2px;
     height: 32px; }
 
