@@ -57,11 +57,11 @@
 	height: 40px;
 
 	&__close {
-		background-image: url("/src/img/close.svg");	
+		background-image: url("../img/close.svg");	
 	}
 	
 	&__search {
-		background-image: url("/src/img/search.svg");
+		background-image: url("../img/search.svg");
 		margin-left: auto;		
 	}
 }

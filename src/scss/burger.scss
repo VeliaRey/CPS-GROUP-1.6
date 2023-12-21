@@ -19,15 +19,15 @@
 		align-items: center;
 	}
 		.round-button__chatcopy {
-			background-image: url("/src/img/chatCopy.svg");
+			background-image: url("../img/chatCopy.svg");
 		}
 		
 		.round-button__chat {
-			background-image: url("/src/img/chat.svg");	
+			background-image: url("../img/chat.svg");	
 		}
 		
 		.round-button__profile {
-			background-image: url("/src/img/profile.svg");	
+			background-image: url("../img/profile.svg");	
 		}
 	
 
@@ -54,7 +54,7 @@
 				&::after {
 					content: "";
 					position: absolute;
-					background-image: url("/src/img/highlight.svg");
+					background-image: url("../img/highlight.svg");
 					width: 4px;
 					height: 32px;
 					left: 0px;

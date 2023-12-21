@@ -30,7 +30,7 @@
 @mixin modal-title-before {
 	content: "";
 	position: absolute;
-	background-image: url("/src/img/highlight.svg");
+	background-image: url("../img/highlight.svg");
 	width: 4px;
 	height: 40px;
 	left: -16px;
@@ -73,7 +73,7 @@
 	}
 
 	input[type="submit"] {
-		background-image:url("/src/img/Group11.svg");
+		background-image:url("../img/Group11.svg");
 		width: 136px;
 		height: 32px;
 		background-repeat: no-repeat;

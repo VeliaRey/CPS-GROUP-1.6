@@ -29,7 +29,7 @@
 		&::before {
 			content: "";
 			position: absolute;
-			background-image: url("/src/img/highlight.svg");
+			background-image: url("../img/highlight.svg");
 			width: 4px;
 			height: 40px;
 			left: -16px;
@@ -101,7 +101,7 @@
 	&::before {
 		position: absolute;
 		content: "";
-		background-image: url("/src/img/expand.svg");
+		background-image: url("../img/expand.svg");
 		width: 24px;
 		height: 24px;
 		left: 0px;
@@ -220,7 +220,7 @@
 
 			& div {
 				@include button-group-div();
-				background-image: url("/src/img/repair.svg");
+				background-image: url("../img/repair.svg");
 			}
 		}
 
@@ -231,7 +231,7 @@
 
 			& div {
 				@include button-group-div();
-				background-image: url("/src/img/checkstatus.svg");
+				background-image: url("../img/checkstatus.svg");
 			}
 		}
 	}

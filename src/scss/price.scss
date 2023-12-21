@@ -45,7 +45,7 @@
 			position: absolute;
 			bottom: 16px;
 			right: 16px;
-			background-image: url('/src/img/Group10.svg');
+			background-image: url('../img/Group10.svg');
 			width: 119px;
 			height: 32px;
 		}
@@ -93,7 +93,7 @@
 
 		&::after {
 			content: "";
-			background-image: url("/src/img/more.svg");
+			background-image: url("../img/more.svg");
 			width: 24px;
 			height: 28px;
 			position: absolute;
