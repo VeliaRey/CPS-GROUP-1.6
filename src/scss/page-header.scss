@@ -21,31 +21,31 @@
 	.header {
 
 		&__burger {
-			background-image: url("/src/img/burger.svg");
+			background-image: url("../img/burger.svg");
 		}
 
 		&__repair {
-			background-image: url("/src/img/repair.svg");
+			background-image: url("../img/repair.svg");
 		}
 
 		&__call {
-			background-image: url("/src/img/call.svg");
+			background-image: url("../img/call.svg");
 		}
 
 		&__chat {
-			background-image: url("/src/img/chat.svg");
+			background-image: url("../img/chat.svg");
 		}
 
 		&__profile {
-			background-image: url("/src/img/profile.svg");
+			background-image: url("../img/profile.svg");
 		}
 
 		&__checkstatus {
-			background-image: url("/src/img/checkstatus.svg");
+			background-image: url("../img/checkstatus.svg");
 		}
 
 		&__divider {
-			background-image: url("/src/img/divider.svg");
+			background-image: url("../img/divider.svg");
 			width: 2px;
 			height: 32px;
 		}
