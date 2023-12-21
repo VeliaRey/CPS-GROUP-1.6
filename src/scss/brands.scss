@@ -12,7 +12,7 @@
 }
 
 @mixin button-go {
-	background-image: url("/src/img/go.svg");
+	background-image: url("../img/go.svg");
 	background-repeat: no-repeat;
 	background-color: $white;
 	background-position: right 16px bottom 16px;
