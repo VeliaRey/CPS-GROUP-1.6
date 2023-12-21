@@ -89,11 +89,11 @@ a {
     gap: 16px;
     align-items: center; }
   .burger .round-button__chatcopy {
-    background-image: url("/src/img/chatCopy.svg"); }
+    background-image: url(./static/chatCopy.svg); }
   .burger .round-button__chat {
-    background-image: url("/src/img/chat.svg"); }
+    background-image: url(./static/chat.svg); }
   .burger .round-button__profile {
-    background-image: url("/src/img/profile.svg"); }
+    background-image: url(./static/profile.svg); }
   .burger-menu {
     list-style: none;
     padding-bottom: 100px; }
@@ -111,7 +111,7 @@ a {
         .burger-menu__link:hover::after {
           content: "";
           position: absolute;
-          background-image: url("/src/img/highlight.svg");
+          background-image: url(./static/highlight.svg);
           width: 4px;
           height: 32px;
           left: 0px;
@@ -184,7 +184,7 @@ a {
     .modal-chat__title::before {
       content: "";
       position: absolute;
-      background-image: url("/src/img/highlight.svg");
+      background-image: url(./static/highlight.svg);
       width: 4px;
       height: 40px;
       left: -16px;
@@ -208,7 +208,7 @@ a {
   .modal-chat__link {
     color: #ff3e79; }
   .modal-chat input[type="submit"] {
-    background-image: url("/src/img/Group11.svg");
+    background-image: url(./static/Group11.svg);
     width: 136px;
     height: 32px;
     background-repeat: no-repeat;
@@ -264,7 +264,7 @@ a {
     .modal-call__title::before {
       content: "";
       position: absolute;
-      background-image: url("/src/img/highlight.svg");
+      background-image: url(./static/highlight.svg);
       width: 4px;
       height: 40px;
       left: -16px;
@@ -324,9 +324,9 @@ a {
   width: 40px;
   height: 40px; }
   .round-button__close {
-    background-image: url("/src/img/close.svg"); }
+    background-image: url(./static/close.svg); }
   .round-button__search {
-    background-image: url("/src/img/search.svg");
+    background-image: url(./static/search.svg);
     margin-left: auto; }
 
 .item--hidden {
@@ -360,7 +360,7 @@ a {
     .title-line__title::before {
       content: "";
       position: absolute;
-      background-image: url("/src/img/highlight.svg");
+      background-image: url(./static/highlight.svg);
       width: 4px;
       height: 40px;
       left: -16px;
@@ -423,7 +423,7 @@ a {
   .text__buttons::before {
     position: absolute;
     content: "";
-    background-image: url("/src/img/expand.svg");
+    background-image: url(./static/expand.svg);
     width: 24px;
     height: 24px;
     left: 0px;
@@ -517,7 +517,7 @@ a {
         background-position: right;
         background-repeat: no-repeat;
         line-height: 40px;
-        background-image: url("/src/img/repair.svg"); }
+        background-image: url(./static/repair.svg); }
     .button-group__status {
       font-family: "TT Lakes";
       font-weight: 500;
@@ -536,7 +536,7 @@ a {
         background-position: right;
         background-repeat: no-repeat;
         line-height: 40px;
-        background-image: url("/src/img/checkstatus.svg"); } }
+        background-image: url(./static/checkstatus.svg); } }
 
 .swiper-slide {
   display: flex;
@@ -652,7 +652,7 @@ a {
     .text__button::before {
       position: absolute;
       content: "";
-      background-image: url("/src/img/expand.svg");
+      background-image: url(./static/expand.svg);
       width: 24px;
       height: 24px;
       left: 24px; } }
@@ -731,7 +731,7 @@ a {
     .text__button::before {
       position: absolute;
       content: "";
-      background-image: url("/src/img/expand.svg");
+      background-image: url(./static/expand.svg);
       width: 24px;
       height: 24px;
       left: 24px; } }
@@ -793,7 +793,7 @@ a {
     position: absolute;
     bottom: 16px;
     right: 16px;
-    background-image: url("/src/img/Group10.svg");
+    background-image: url(./static/Group10.svg);
     width: 119px;
     height: 32px; }
 
@@ -835,7 +835,7 @@ a {
     position: relative; }
     .description__offer::after {
       content: "";
-      background-image: url("/src/img/more.svg");
+      background-image: url(./static/more.svg);
       width: 24px;
       height: 28px;
       position: absolute; }
@@ -875,7 +875,7 @@ a {
   background-color: white;
   border-radius: 6px; }
   .table__images {
-    background-image: url("/src/img/Group10.svg");
+    background-image: url(./static/Group10.svg);
     width: 119px;
     height: 32px;
     background-repeat: no-repeat;
