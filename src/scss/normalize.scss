@@ -17,7 +17,6 @@ $fontS24: 24px;
 $fW-400: 400;
 $fW-500: 500;
 $fW-700: 700;
-$l-spasing: -0.20000000298023224px;
 $text-black: rgba(27, 28, 33, 1);
 $white: rgba(255, 255, 255, 1);
 $super-light-gray: rgba(248, 248, 248, 1);
@@ -28,12 +27,34 @@ $pink: rgba(255, 62, 121, 1);
 $transparent: transparent;
 
 
+@mixin font ($fontS, $fontW, $color) {
+	font-family: "TT Lakes";
+	font-weight: $fontW;
+	color: $color;
+	font-size: $fontS;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	line-height: 24px;
+}
+
+@mixin gray-text ($fontS) {
+	font-size: $fontS;
+	font-weight: $fW-400;
+	color: $light-gray;
+}
+
+.body {
+	@include font ($fontS16, $fW-500, $text-black);
+}
+
+
 button,
-a {
+a, li {
 	background-color: $transparent;
 	cursor: pointer;	
 	text-decoration: none;
 	color: $text-black;
+	list-style-type: none;
 }
 
 .round-button {
@@ -50,6 +71,8 @@ a {
 	}
 }
 
+
+
 .round-button:hover,
 .button-buy:hover,
 .button-send:hover {
@@ -61,7 +84,7 @@ a {
 	display: block !important;
 }
 
-.page__opacity {
+.opacity {
 	opacity: 0.2;	
 	z-index: 6;
 }
@@ -81,6 +104,10 @@ a {
 		
 		.body {
 			display: flex;
-		}			
+		}		
+		.overlay {
+			display: flex;
+		
+		}	
 	}
 	

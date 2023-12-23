@@ -1,8 +1,7 @@
 @mixin button-group {
 	display: block;
 	text-align: left;			
-	line-height: 24px;		
-	text-align: left;	
+	font-size: $fontS16;
 }
 
 @mixin button-group-div {
@@ -22,9 +21,11 @@
 	padding: 24px 16px 24px 0;
 
 	&__title {
-		@include font (28px, $fW-700, $text-black);
+		
 		position: relative;	
 		margin-left: 16px;
+		font-size: 28px;
+		font-weight: $fW-700;
 	
 		&::before {
 			content: "";
@@ -48,12 +49,11 @@
 	align-items: center;
 	overflow-x: scroll;
 	padding: 0 16px;
-	list-style-type: none;
-
+	
 	&__item {
 		height: 40px;
 		border: 2px $transparent solid;
-
+	
 		&:hover {
 			border: 2px $bgc-blue solid;
 			border-radius: 6px;
@@ -61,12 +61,12 @@
 		}
 	
 		& a {
-			@include font ($fontS16, $fW-500, $dark-gray);
+			
 			display: block;
 			white-space: nowrap;
 			padding: 8px 14px;
-			text-decoration: none;	
 			text-align: left;		
+			color: $light-gray;
 		}
 	}
 }
@@ -75,8 +75,7 @@
 	padding-top: 24px;
 
 	&__text {
-		font-size: 14px;
-		color: $text-black;
+		font-size: $fontS14;
 		line-height: 18px;
 		overflow: hidden;
 		padding: 0 16px;
@@ -89,14 +88,11 @@
 }
 
 .text__buttons {
-	@include font ($fontS16, $fW-500, $text-black);
 	position: relative;
-	height: 24px;
 	margin-top: 16px;
 	padding-left: 32px;
 	margin-bottom: 16px;
-	line-height: 24px;
-	text-align: left;
+	padding-top: 5px;
 
 	&::before {
 		position: absolute;
@@ -110,11 +106,11 @@
 }
 
 .text__content {
-	@include font ($fontS14, $fW-400, $text-black);
 	overflow: hidden;
 	height: 90px;
 	line-height: 18px;
-	text-align: left;
+	font-size: 14px;
+	font-weight: $fW-400;
 
 	& p:not(:first-child) {
 		margin-top: 23px;
@@ -181,16 +177,15 @@
 			&::before {				
 				left: -32px;			
 			}
-
-			.services-list {
-				flex-wrap: wrap;
-				padding-left: 32px;
-				padding-right: 25px;
-				overflow: visible;
-			}
 		}
 	}
-
+	.services-list {
+		flex-wrap: wrap;
+		padding-left: 32px;
+		padding-right: 25px;
+		overflow: visible;
+	}
+	
 	.state {
 		padding: 32px;
 		gap: 36px;
@@ -212,11 +207,12 @@
 		align-items: center;
 		justify-content: flex-start;
 		gap: 32px;
-	
+	line-height: 24px;
+			font-size: $fontS16;
 		&__request {
-			@include font ($fontS16, $fW-500, $text-black);
 			@include button-group;
 			width: 173px;
+			
 
 			& div {
 				@include button-group-div();
@@ -225,7 +221,6 @@
 		}
 
 		&__status {
-			@include font ($fontS16, $fW-500, $text-black);
 			@include button-group;
 			width: 168px;
 

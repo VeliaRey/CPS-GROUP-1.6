@@ -2,20 +2,19 @@
 	
 	&-slide {
 	display: flex;
-	width: 206px !important;
+	width: 208px !important;
 	height: 70px;
 	border: 1px rgba(234, 234, 234, 1) solid;
 	border-radius: 6px;
 	background-color: rgba(255, 255, 255, 1);
 	align-items: center;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding: 0 16px;
+
 }
 
 &-wrapper {
 	padding: 16px;
 	padding-bottom: 52px;
-	list-style-type: none;
 }
 
 	&-pagination-bullet {
@@ -35,12 +34,12 @@
 @media (min-width: 768px) {
 
 	.slider {	
+				
 		&__wrapper {
 			height: 160px;
-			overflow: hidden;
 		}
 	}
-
+		
 	.swiper {
 		&-wrapper {
 			display: flex;
@@ -48,6 +47,7 @@
 			flex-wrap: wrap;
 			position: relative;
 			padding: 24px;
+			width: 96%;
 		}
 
 		&-slide {

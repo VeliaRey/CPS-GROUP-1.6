@@ -18,12 +18,3 @@
 	font-weight: 700;
 	font-style: normal;
 }
-
-
-@mixin font ($fontS, $fontW, $color) {
-	font-family: "TT Lakes";
-	font-weight: $fontW;
-	color: $color;
-	font-size: $fontS;
-	letter-spacing: $l-spasing;
-}

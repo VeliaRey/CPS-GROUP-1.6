@@ -1,13 +1,11 @@
 .burger {
-	@include font ($fontS16, $fW-500, $text-black);
 	display: none;
-	width: 320px;
+	width: 320px !important;
 	box-shadow: 
 	16px 0px 52px 0px rgba(14, 24, 80, 0.2),
   -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-	min-height: 100vh;
+	height: 170vh;    
 	position: absolute;
-	min-height: 370vh;
 	z-index: 10;
 	background-color: rgba(255, 255, 255, 1);
 

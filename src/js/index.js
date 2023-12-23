@@ -70,7 +70,7 @@ buttonText.addEventListener('click', function () {
 let burgerOpen = document.querySelector('.header__burger')
 let burgerMenu = document.querySelector('.burger')
 let pageOpacity = document.querySelector('.page')
-let burgerClose = document.querySelector('.round-button__close')
+let burgerClose = document.querySelector('.burger-header__buttons > .round-button__close')
 let buttonOpenChat = document.querySelector('.round-button__chat')
 let modalChat = document.querySelector('.modal-chat')
 let modalChatClose = document.querySelector(
@@ -83,17 +83,18 @@ let modalCallClose = document.querySelector(
   '.modal-call__button > .round-button__close'
 )
 let buttonCall = document.querySelector('.header__call')
+let overlay = document.querySelector('.overlay')
 let isOpened2 = false
 
 burgerOpen.addEventListener('click', function (e) {
   e.stopPropagation()
   burgerMenu.classList.add('opened')
-  pageOpacity.classList.add('page__opacity')
+	pageOpacity.classList.add('opacity')
   isOpened2 = true
 })
 burgerClose.addEventListener('click', function () {
-  burgerMenu.classList.remove('opened')
-  pageOpacity.classList.remove('page__opacity')
+	burgerMenu.classList.remove('opened')
+  pageOpacity.classList.remove('opacity')
 })
 pageOpacity.addEventListener('click', function () {
   if (isOpened2) {
@@ -105,15 +106,15 @@ pageOpacity.addEventListener('click', function () {
 let isOpened3 = false
 buttonOpenChat.addEventListener('click', function () {
   modalChat.classList.add('opened')
-  pageOpacity.classList.add('page__opacity')
-  burgerMenu.classList.remove('opened')
-  burgerMenu.classList.add('page__opacity')
+  overlay.classList.add('opacity')
+  burgerClose.click()
   isOpened3 = true
 })
-modalChatClose.addEventListener('click', function () {
-  modalChat.classList.remove('opened')
-  pageOpacity.classList.remove('page__opacity')
-  burgerMenu.classList.remove('page__opacity')
+modalChatClose.addEventListener('click', function (e) {
+	e.stopPropagation()
+	modalChat.classList.remove('opened')
+  overlay.classList.remove('opacity')
+	isOpened3 = false
 })
 pageOpacity.addEventListener('click', function () {
   if (isOpened3) {
@@ -124,22 +125,24 @@ pageOpacity.addEventListener('click', function () {
 buttonChat.addEventListener('click', function (e) {
   e.stopPropagation()
   modalChat.classList.add('opened')
-  pageOpacity.classList.add('page__opacity')
-  isOpened3 = true
+  overlay.classList.add('opacity')
+	isOpened3 = true
 })
 
 let isOpened4 = false
-buttonOpenCall.addEventListener('click', function () {
+buttonOpenCall.addEventListener('click', function (e) {
+	e.stopPropagation()
   modalCall.classList.add('opened')
-  pageOpacity.classList.add('page__opacity')
+  overlay.classList.add('opacity')
   burgerMenu.classList.remove('opened')
-  burgerMenu.classList.add('page__opacity')
+	burgerClose.click()
   isOpened4 = true
 })
 modalCallClose.addEventListener('click', function () {
   modalCall.classList.remove('opened')
-  pageOpacity.classList.remove('page__opacity')
-  burgerMenu.classList.remove('page__opacity')
+  overlay.classList.remove('opacity')
+	isOpened3 = false
+  
 })
 pageOpacity.addEventListener('click', function () {
   if (isOpened4) {
@@ -150,6 +153,6 @@ pageOpacity.addEventListener('click', function () {
 buttonCall.addEventListener('click', function (e) {
   e.stopPropagation()
   modalCall.classList.add('opened')
-  pageOpacity.classList.add('page__opacity')
-  isOpened4 = true
+  overlay.classList.add('opacity')
+	isOpened4 = true
 })

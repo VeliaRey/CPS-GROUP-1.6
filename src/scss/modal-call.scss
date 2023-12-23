@@ -14,9 +14,42 @@
 	}	
 }
 
-@media (min-width: 1366px) {
+input[type="submit"] {
+	background-image:url("../img/Group11.svg");
+	width: 136px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-color: $transparent;
+	color: $transparent;
+	margin-top: 19px;
+	margin-left: 154px;
+}
 
-	.modal-call__button > .round-button__close {
-		transform: translateX(-105px);			
+@media (min-width: 1366px) {
+		
+	.modal {
+		width: 440px;
+		padding: 40px 32px;
+	
+		&-button {
+			height: 0;
+		}	
+
+		&-title {
+			padding-top: 0;
+		
+			&::before {
+				left: -32px;
+				top: 0;
+			}
+		}
+	
+	input[type="submit"] {			
+		margin-left: 240px;	
+	}
+	
+		&-call__button > .round-button__close {
+			transform: translateX(-105px);			
+		}
 	}
 }

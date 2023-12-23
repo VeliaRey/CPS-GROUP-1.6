@@ -8,7 +8,38 @@
 </head>
 
 <body class ="body">
-	<aside class="burger">
+	
+	<aside class="modal modal-chat">		
+			<div class="modal-chat__button modal-button">
+				<button class="round-button__close round-button"></button>	
+			</div>
+			<h1 class="modal-chat__title modal-title ">
+				Обратная связь
+			</h1>
+			<p><input class="modal-chat__field" type="text" required name="name" autocomplete="off" placeholder="Имя"></p>
+			<p><input class="modal-chat__field" type="tel" required name="phone" autocomplete="off" placeholder="Телефон"></p>
+			<p><input class="modal-chat__field" type="email" required name="email" autocomplete="off" placeholder="Электронная почта"></p>
+			<textarea class="modal-chat__field message" name="message" placeholder="Сообщение"></textarea>
+			<p>Нажимая "отправить", вы даете согласие на <a class="modal-chat__link" href="#">обработку персональных данных</a> 
+				и соглашаетесь с нашей <a class="modal-chat__link" href="#">политикой конфиденциальности</a></p>
+				<p><input class="button-send" type="submit"></p>
+				
+	</aside>
+	<aside class="modal modal-call">
+		<div class="modal-call__button modal-button">
+			<button class="round-button__close round-button"></button>	
+		</div>
+		<h1 class="modal-call__title modal-title ">
+			Заказать звонок
+		</h1>
+		<p><input class="modal-chat__field" type="tel" required name="phone" autocomplete="off" placeholder="Телефон"></p>
+		<p>Нажимая "отправить", вы даете согласие на <a class="modal-chat__link" href="#">обработку персональных данных</a> 
+			и соглашаетесь с нашей <a class="modal-chat__link" href="#">политикой конфиденциальности</a></p>
+			<p><input class="button-send" type="submit"></p>
+	</aside>
+
+	<div class="overlay">
+	<aside class="burger">		
 		<header class="burger-header ">	
 			<div class="burger-header__buttons">	
 				<button class="round-button__close round-button"></button>		
@@ -68,35 +99,8 @@
 			</div>
 		</footer>
 	</aside>
-	<aside class="modal modal-chat">		
-			<div class="modal-chat__button modal-button">
-				<button class="round-button__close round-button"></button>	
-			</div>
-			<h1 class="modal-chat__title modal-title ">
-				Обратная связь
-			</h1>
-			<p><input class="modal-chat__field" name="name" autocomplete="off" placeholder="Имя"></p>
-			<p><input class="modal-chat__field" name="phone" autocomplete="off" placeholder="Телефон"></p>
-			<p><input class="modal-chat__field" name="email" autocomplete="off" placeholder="Электронная почта"></p>
-			<textarea class="modal-chat__field message" name="message" placeholder="Сообщение"></textarea>
-			<p>Нажимая "отправить", вы даете согласие на <a class="modal-chat__link" href="#">обработку персональных данных</a> 
-				и соглашаетесь с нашей <a class="modal-chat__link" href="#">политикой конфиденциальности</a></p>
-				<p><input class="button-send" type="submit"></p>
-				
-	</aside>
-	<aside class="modal modal-call">
-		<div class="modal-call__button modal-button">
-			<button class="round-button__close round-button"></button>	
-		</div>
-		<h1 class="modal-call__title modal-title ">
-			Заказать звонок
-		</h1>
-		<p><input class="modal-chat__field" name="phone" autocomplete="off" placeholder="Телефон"></p>
-		<p>Нажимая "отправить", вы даете согласие на <a class="modal-chat__link" href="#">обработку персональных данных</a> 
-			и соглашаетесь с нашей <a class="modal-chat__link" href="#">политикой конфиденциальности</a></p>
-			<p><input class="button-send" type="submit"></p>
-	</aside>
 <div class="page">
+
 	<header class="page__header header">
    
 		<button class="header__burger round-button"></button>
@@ -362,7 +366,7 @@
 		Получить коммерческое предложение
 	</a>
 </div>
-
+</main>
 <footer class="page-footer">
 	<div class="page-footer__apesong">
 		&#169;2019 CPS <br>
@@ -376,6 +380,8 @@
 	</div>
 </footer>
 </div>
+</div>
+</div> 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

@@ -19,14 +19,13 @@
 }
 
 @mixin text-button {
-	@include font ($fontS16, $fW-500, $text-black);
 	display: block;
 	position: relative;
 	height: 24px;
 	padding-left: 57px;
-	line-height: 24px;
-	text-align: left;
 	background-color: transparent;
+	font-weight: $fW-500;
+	font-size: $fontS16;
 }
 
 @mixin text-button-before {
@@ -53,15 +52,13 @@
 .brands {
 	
 	background-color: $super-light-gray;	
-	position: relative;
+	position: relative;	
 	
-
 	&__title {
 		@include gradient-title();
 		
 		&-text {
-			@include font ($fontS16, $fW-400, $light-gray);
-			line-height: 24px;
+			@include gray-text ($fontS16);
 			text-transform: uppercase;
 		}
 	}
@@ -89,11 +86,13 @@
 
 .slider__item-brands {
 	@include button-go();
+	padding: 16px;
+	height: 126px;
 }
 
 @media (min-width: 768px) {
 
-	.brands {
+	.brands {				
 		padding-bottom: 34px;	
 
 		&__title {
@@ -114,6 +113,7 @@
 		}
 	}
 }
+
 
 @media (min-width: 1366px) {	
 	.brands__title {
