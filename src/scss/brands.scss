@@ -80,6 +80,7 @@
 	}
 }
 
+
 .text__button {
 	display: none;
 }
@@ -87,7 +88,7 @@
 .slider__item-brands {
 	@include button-go();
 	padding: 16px;
-	height: 126px;
+	height: 38px;
 }
 
 @media (min-width: 768px) {

@@ -56,8 +56,7 @@ let hideText = document.querySelector('.text__content')
 let isOpenedText = false
 
 buttonText.addEventListener('click', function () {
-	console.log("i love you");
-	 buttonText.classList.toggle('button--show-all--opened')
+	buttonText.classList.toggle('button--show-all--opened')
   hideText.classList.toggle('change--height')
   if (!isOpenedText) {
     buttonText.textContent = 'Скрыть'
@@ -83,20 +82,21 @@ let modalCallClose = document.querySelector(
   '.modal-call__button > .round-button__close'
 )
 let buttonCall = document.querySelector('.header__call')
-let overlay = document.querySelector('.overlay')
+let overlay = document.getElementById('overlay')
+let overlayBurger = document.getElementById('overlayBurger')
 let isOpened2 = false
 
 burgerOpen.addEventListener('click', function (e) {
   e.stopPropagation()
   burgerMenu.classList.add('opened')
-	pageOpacity.classList.add('opacity')
+	overlay.style.display = "block"
   isOpened2 = true
 })
 burgerClose.addEventListener('click', function () {
 	burgerMenu.classList.remove('opened')
-  pageOpacity.classList.remove('opacity')
+  overlay.style.display = "none";
 })
-pageOpacity.addEventListener('click', function () {
+overlay.addEventListener('click', function () {
   if (isOpened2) {
     burgerClose.click()
     isOpened2 = false
@@ -104,19 +104,22 @@ pageOpacity.addEventListener('click', function () {
 })
 
 let isOpened3 = false
-buttonOpenChat.addEventListener('click', function () {
+buttonOpenChat.addEventListener('click', function (e) {
+	e.stopPropagation()
   modalChat.classList.add('opened')
-  overlay.classList.add('opacity')
-  burgerClose.click()
+	burgerClose.click()
   isOpened3 = true
+	overlay.style.display = "block"
+	overlayBurger.style.display = "block"
 })
 modalChatClose.addEventListener('click', function (e) {
 	e.stopPropagation()
 	modalChat.classList.remove('opened')
-  overlay.classList.remove('opacity')
+  overlay.style.display = "none"
+	overlayBurger.style.display = "none"
 	isOpened3 = false
 })
-pageOpacity.addEventListener('click', function () {
+overlayBurger.addEventListener('click', function () {
   if (isOpened3) {
     modalChatClose.click()
     isOpened3 = false
@@ -125,34 +128,38 @@ pageOpacity.addEventListener('click', function () {
 buttonChat.addEventListener('click', function (e) {
   e.stopPropagation()
   modalChat.classList.add('opened')
-  overlay.classList.add('opacity')
+  overlay.style.display = "block"
+	overlayBurger.style.display = "block"
 	isOpened3 = true
 })
 
 let isOpened4 = false
 buttonOpenCall.addEventListener('click', function (e) {
 	e.stopPropagation()
-  modalCall.classList.add('opened')
-  overlay.classList.add('opacity')
-  burgerMenu.classList.remove('opened')
-	burgerClose.click()
+  modalCall.classList.add('opened')  
+	burgerClose.click() 
+	overlay.style.display = "block"
+	overlayBurger.style.display = "block"
   isOpened4 = true
 })
-modalCallClose.addEventListener('click', function () {
-  modalCall.classList.remove('opened')
-  overlay.classList.remove('opacity')
-	isOpened3 = false
-  
+modalCallClose.addEventListener('click', function (e) {
+	e.stopPropagation()
+	modalCall.classList.remove('opened')
+  overlay.style.display = "none"
+	overlayBurger.style.display = "none"
+	isOpened4 = false
+ 
 })
-pageOpacity.addEventListener('click', function () {
+overlayBurger.addEventListener('click', function () {
   if (isOpened4) {
     modalCallClose.click()
     isOpened4 = false
   }
 })
 buttonCall.addEventListener('click', function (e) {
-  e.stopPropagation()
+	e.stopPropagation()
   modalCall.classList.add('opened')
-  overlay.classList.add('opacity')
+  overlay.style.display = "block"
+	overlayBurger.style.display = "block"
 	isOpened4 = true
 })
